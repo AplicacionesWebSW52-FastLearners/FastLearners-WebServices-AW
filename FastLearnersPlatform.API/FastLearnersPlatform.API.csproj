@@ -27,7 +27,6 @@
     <Folder Include="Shared\" />
     <Folder Include="Users\Domain\Repositories\" />
     <Folder Include="Users\Domain\Services\" />
-    <Folder Include="Users\Shared\" />
   </ItemGroup>
 
 </Project>
