@@ -1,22 +1,14 @@
-namespace FastLearnersPlatform.API.Users.Shared.Domain.Services.Communication;
-
-public class BaseResponse<T>
+namespace FastLearnersPlatform.API.Users.Shared.Domain.Services.Communication
 {
-    protected BaseResponse(string message)
+    public abstract class BaseResponse
     {
-        Success = false;
-        Message = message;
-        Resource = default;
-    }
+        public bool Success { get; protected set; }
+        public string Message { get; protected set; }
 
-    protected BaseResponse(T resource)
-    {
-        Success = true;
-        Message = string.Empty; 
-        Resource = resource;
+        protected BaseResponse(bool success, string message)
+        {
+            Success = success;
+            Message = message;
+        }
     }
-    public bool Success { get; set; }
-    public string Message { get; set; }
-    public T Resource { get; set; }
-    
 }
