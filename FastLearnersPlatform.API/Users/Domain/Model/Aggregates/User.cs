@@ -1,9 +1,10 @@
+/*
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
-/* using FastLearners.Platform.Shared.Domain.Model.Aggregates;
-using FastLearners.Platform.Users.Domain.Model.Commands;
-using FastLearners.Platform.Users.Domain.Model.ValueObjects;
- */
+//using FastLearners.Platform.Shared.Domain.Model.Aggregates;
+//using FastLearners.Platform.Users.Domain.Model.Commands;
+//using FastLearners.Platform.Users.Domain.Model.ValueObjects;
+ 
 namespace FastLearners.Platform.Users.Domain.Model.Aggregates
 {
     public class User : AuditableAbstractAggregateRoot<User>
@@ -129,3 +130,4 @@ namespace FastLearners.Platform.Users.Domain.Model.Aggregates
         }
     }
 }
+*/
